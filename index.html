@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thomas Duperron - IT Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <meta property="og:image" content="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body onload="typedEffect()" id="page">
+
+<header>
+    <h1 id="typed"></h1>
+    <h2>Software Developer & Functional Analyst who enjoys solving real problems</h2>
+    <div class="cta">
+        <a href="#experience" class="btn btn-primary">Experience</a>
+        <a href="#education" class="btn btn-primary">Education</a>
+        <a href="#skills" class="btn btn-secondary">Skills</a>
+        <a href="https://www.linkedin.com/in/thomas-duperron-abi-nader-10638b208/" class="btn btn-secondary">LinkedIn</a>
+    </div>
+</header>
+
+<section id="about">
+    <h3>About Me</h3>
+    <div class="card">
+        <p>
+        Functional analyst with a strong sense of organization and communication, always maintaining team spirit while demonstrating autonomy, 
+        rigour, and punctuality. Curious and proactive, I am deeply involved in optimizing processes and proposing relevant solutions. 
+        Passionate about IT and problem-solving, I dedicate myself to analyzing needs to contribute effectively to various projects.
+        </p>
+    </div>
+</section>
+
+<section id="experience">
+    <h3>Professional Experience</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>Functional Analyst - MCE (Government)</h4>
+            <p class="muted">2023 - Present · Montreal, QC</p>
+            <ul>
+                <li>Work closely with clients to understand their needs and translate them into clear functional solutions</li>
+                <li>Act as a day-to-day bridge between stakeholders and development teams</li>
+                <li>Write functional documentation and test cases to support development and delivery</li>
+                <li>Track and manage requirements using Azure DevOps</li>
+                <li>Collaborate with distributed teams across Montreal and Quebec City</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h4>Programmer Analyst (Student Position) - CAG (Government)</h4>
+            <p class="muted">2022 - 2023 · Montreal, QC</p>
+            <ul>
+                <li>Investigated issues to understand root causes and propose practical solutions</li>
+                <li>Maintained and supported applications and systems</li>
+                <li>Researched and consolidated development-related information</li>
+                <li>Communicated technical information to clients and stakeholders</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h4>Quality Assurance Analyst (Student Position) - MIFI (Government)</h4>
+            <p class="muted">2021 - 2022 · Montreal, QC</p>
+            <ul>
+                <li>Took part in testing activities across all stages of the development lifecycle</li>
+                <li>Developed and executed automated functional tests</li>
+                <li>Reviewed and analyzed functional documentation</li>
+                <li>Wrote test scenarios and test cases</li>
+                <li>Created datasets and tracked reported defects</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h3>Education</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>Bachelor’s Degree by Accumulation</h4>
+            <p class="muted">Major in Computer Science · Minor in Communication Sciences</p>
+            <p class="muted">Université de Montréal · Montreal, QC</p>
+            <p class="muted">Completed in June 2025</p>
+        </div>
+
+        <div class="card">
+            <h4>French Scientific Baccalaureate</h4>
+            <p class="muted">Equivalent to DEC in Natural Sciences</p>
+            <p class="muted">Collège Stanislas · Montreal, QC</p>
+            <p class="muted">Completed in 2019</p>
+        </div>
+
+        <div class="card">
+            <h4>Aeronautical Initiation Certificate</h4>
+            <p class="muted">Institution Saint-Aspais · Melun, France</p>
+            <p class="muted">Completed in 2017</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <div class="grid">
+        <div class="card">
+            <h4>Languages</h4>
+            <p class="muted">French (native), English (bilingual), Spanish (intermediate), Arabic (beginner)</p>
+        </div>
+        <div class="card">
+            <h4>Programming</h4>
+            <p class="muted">C++, C#, Java, Python, SQL, HTML, CSS, JavaScript</p>
+        </div>
+        <div class="card">
+            <h4>Frameworks & Libraries</h4>
+            <p class="muted">ASP.NET, DevExpress, Bootstrap</p>
+        </div>
+        <div class="card">
+            <h4>Tools</h4>
+            <p class="muted">Azure DevOps, Visual Studio, JetBrains, Office Suite, Visio, Visual Paradigm</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 · Thomas Duperron · Montreal / Paris
+</footer>
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+    $(window).ready(function () {
+        $('#page').css('display', 'none');
+        $('#page').fadeIn(2000);
+    });
+</script>
+
+</body>
+</html>

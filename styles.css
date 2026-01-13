@@ -1,0 +1,145 @@
+:root {
+      --bg: #0f172a;
+      --card: #111827;
+      --wht: #eff0f3;
+      --muted: #9ca3af;
+      --accent: #6366f1;
+      --hovered: #494cf0;
+}
+
+html {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+    color: var(--wht);
+    line-height: 1.6;
+    background-color: #020617;
+	background-image: linear-gradient(to bottom left, #0f172a, #020617);
+	background-image: -webkit-linear-gradient(to bottom left, #0f172a, #020617);
+	background-image: -moz-linear-gradient(to bottom left, #0f172a, #020617);
+	background-image: -o-linear-gradient(to bottom left, #0f172a, #020617);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6366f1;
+    background: var(--accent);
+    color: var(--wht);
+}
+
+.btn-primary:hover {
+    background-color: var(--hovered);
+    border-color: var(--hovered);
+}
+
+.btn-secondary {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-secondary:hover {
+    border-color: var(--hovered);
+    color: var(--hovered);
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 4rem 2rem;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.05);
+}
+
+.card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+ul {
+    margin-top: 1rem; padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
